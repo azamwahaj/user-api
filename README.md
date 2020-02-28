@@ -150,7 +150,7 @@ Response:
 Update User
 
 Endpoint:
-[PUT] http://192.168.99.101:8081/api/v1/user/1
+[PUT] http://192.168.99.100:8081/api/v1/user/1
 
 Request:
 {
@@ -179,7 +179,7 @@ Response:
 Delete User
 
 Endpoint:
-[DELETE] http://192.168.99.101:8081/api/v1/user/1
+[DELETE] http://192.168.99.100:8081/api/v1/user/1
 
 Response:
 {
@@ -192,7 +192,7 @@ Response:
 Get Users by Ids
 
 Endpoint:
-[POST] http://192.168.99.101:8081/api/v1/users
+[POST] http://192.168.99.100:8081/api/v1/users
 
 Request:
 {
