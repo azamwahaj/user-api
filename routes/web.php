@@ -15,13 +15,12 @@ $router->get('/', function () use ($router) {
     return 'User API using ' . $router->app->version();
 });
 
-$router->group(['prefix' => 'api/v1'], function($app)
-{
-  $app->post('user','UserController@createUser');
-  $app->put('user/{id}','UserController@updateUser');
+$router->group(['prefix' => 'api/v1'], function ($app) {
+    $app->post('user', 'UserController@createUser');
+    $app->put('user/{id}', 'UserController@updateUser');
 
-  $app->delete('user/{id}','UserController@deleteUser');
-  $app->get('users','UserController@index');
-  $app->get('user/{id}','UserController@getUser');
-  $app->post('users','UserController@getUsersByIds');
+    $app->delete('user/{id}', 'UserController@deleteUser');
+    $app->get('users', 'UserController@index');
+    $app->get('user/{id}', 'UserController@getUser');
+    $app->post('users', 'UserController@getUsersByIds');
 });
