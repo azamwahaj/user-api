@@ -29,7 +29,7 @@
 - `php artisan migrate`
 - `php artisan db:seed`
 
-### Users API
+### User API Documentation
 
 ```
 Get Users
@@ -235,9 +235,8 @@ Response:
 }
 ```
 
+#### Unit Test
 ```
-Unit Test
-
 Shell into PHP container
 $ docker-compose exec php-fpm bash
 
