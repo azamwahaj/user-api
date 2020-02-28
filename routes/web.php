@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return 'User Service';
+    return 'Users API using Lumen (6.3.3) (Laravel Components ^6.0)';
 });
 
 $router->group(['prefix' => 'api/v1'], function($app)

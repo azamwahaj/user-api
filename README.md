@@ -30,6 +30,12 @@
 - `php artisan db:seed`
 
 ### Users API
+
+```
+Run unit test
+
+```
+
 ```
 Get Users
 

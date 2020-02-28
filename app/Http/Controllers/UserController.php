@@ -68,14 +68,16 @@ class UserController extends Controller{
         $rewardEndpoint = env('REWARD_ENDPOINT', '');
         $url = $rewardEndpoint . '/api/v1/reward/transactions/user/' . $id;
 
-        $client = new \GuzzleHttp\Client();
-        $response = $client->get($url);
+        if ($rewardEndpoint) {
+            $client = new \GuzzleHttp\Client();
+            $response = $client->get($url);
 
-        if ($response->getStatusCode() == 200) {
-            $rewards = json_decode($response->getBody(), true);
-
-            $user['rewards'] = $rewards['data'] ?? [];
+            if ($response->getStatusCode() == 200) {
+                $rewards = json_decode($response->getBody(), true);
+            }
         }
+
+        $user['rewards'] = $rewards['data'] ?? [];
 
         return response()->json(['success' => true, 'data' => $user]);
     }
