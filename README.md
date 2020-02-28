@@ -72,7 +72,7 @@ Response:
 ```
 
 ```
-Get Single User
+Get Single User with Rewards Consumption
 
 Endpoint:
 [GET] http://192.168.99.100:8081/api/v1/user/1
