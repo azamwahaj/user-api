@@ -1,4 +1,4 @@
-# Users API with Lumen Micro Framework (PHP), MySql and JSON API
+# User API with Lumen Micro Framework (PHP), MySql and JSON API
 - User REST API with MySql database 
 - Implements JSON API
 - Lightweight and super-fast
