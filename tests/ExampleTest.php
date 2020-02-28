@@ -15,7 +15,7 @@ class ExampleTest extends TestCase
         $this->get('/');
 
         $this->assertEquals(
-            'Users API using ' . $this->app->version(), $this->response->getContent()
+            'User API using ' . $this->app->version(), $this->response->getContent()
         );
     }
 }
