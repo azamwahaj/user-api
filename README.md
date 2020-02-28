@@ -32,11 +32,6 @@
 ### Users API
 
 ```
-Run unit test
-
-```
-
-```
 Get Users
 
 Endpoint:
@@ -238,6 +233,16 @@ Response:
         }
     ]
 }
+```
+
+```
+Unit Test
+
+Shell into PHP container
+$ docker-compose exec php-fpm bash
+
+Run:
+vendor/bin/phpunit
 ```
 
 ### References
